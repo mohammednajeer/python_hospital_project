@@ -10,10 +10,9 @@
     </head>
     <body>
         <h1>home page</h1>
-        <h2>name is {{name}}</h2>
-        <h2>age is {{age}}</h2>
-        <h2>place is {{place }}</h2>
-
+        {% for n in num1 %}
+            <h2>{{n}}</h2>
+        {% endfor %}
         <script src="" async defer></script>
     </body>
 </html>

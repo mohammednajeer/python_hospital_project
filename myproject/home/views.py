@@ -3,13 +3,10 @@ from django.http import HttpResponse
 # Create your views here.
 def index(request):
 
-    person = {
-        "name":"najeer",
-        "age":30,
-        "place":"palakkad"
-    }
-
-    return render(request,'index.html',person)
+    numbers = {
+        'num1': [x for x in range(11)] ,
+    } 
+    return render(request,'index.html',numbers)
 
 def about(request):
     return render(request,'about.html')

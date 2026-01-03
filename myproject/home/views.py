@@ -18,9 +18,9 @@ def booking(request):
         form = BookingForm(request.POST)
         if form.is_valid():
             form.save()
-
+            return render(request,'confirmation.html')
     form = BookingForm()
-    
+
     return render(request, 'booking.html', {'form': form})
 
 def doctors(request):
